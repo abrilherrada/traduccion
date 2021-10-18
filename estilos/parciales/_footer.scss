@@ -15,6 +15,10 @@
 }
 .footer {
     background: #c1cad6a1;
+    &__logo {
+        padding-bottom: 1rem;
+        margin-top: -1.5rem;
+    }
     &__contacto {
         margin: 0rem 1rem;
         @include celular {
@@ -30,5 +34,6 @@
     }
     &__info {
         margin-bottom: 0;
+        font-size: 1.2rem;
     }
 }

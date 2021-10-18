@@ -167,6 +167,11 @@ header {
   background: #c1cad6a1;
 }
 
+.footer__logo {
+  padding-bottom: 1rem;
+  margin-top: -1.5rem;
+}
+
 .footer__contacto {
   margin: 0rem 1rem;
 }
@@ -190,6 +195,7 @@ header {
 
 .footer__info {
   margin-bottom: 0;
+  font-size: 1.2rem;
 }
 
 /*INDEX - SECCIÓN 1*/
