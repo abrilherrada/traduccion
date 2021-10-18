@@ -1,0 +1,30 @@
+@import "./media-queries";
+@import "./variables";
+
+/*MENÚ DE NAVEGACIÓN*/
+.logo {
+    width: 15rem;
+}
+nav.navbar-light {
+    background-color: rgba(255, 255, 255, 0.836);
+}
+nav.navbar-light .navbar-nav .nav-link {
+    color: $rosa;
+    margin: 0rem 1.5rem;
+    transition: all 1s;
+}
+nav.navbar-light .navbar-nav .nav-link:hover {
+    color: $amarillo;
+    font-size: 1.5rem;
+}
+nav.navbar-light .navbar-nav .nav-link.active {
+    color: $rosa;
+    font-weight: bold;
+}
+header {
+    font-size: 1.25rem;
+    z-index: 2;
+    @include tablet {
+        font-size: 1.2rem;
+    }
+}

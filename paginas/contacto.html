@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script src="https://kit.fontawesome.com/988d6777a5.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="traductor, traductora, profesional, traductora pública nacional de inglés, servicios lingüísticos, inglés, español, contacto, Córdoba, Argentina, horarios, correo electrónico, teléfono, skype">
+    <meta name="description" content="Obtené información sobre mis horarios de atención y cómo contactarme, o enviame un mensaje con tus preguntas.">
+    <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/main.css">
+</head>
+<body>
+    <!--MENÚ DE NAVEGACIÓN-->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../media/logo-trazo.png" alt="inicio"></a>
+                <h1 class="visually-hidden">Abril Herrada</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-items-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobre-mi.html">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./opiniones.html">Opiniones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--SECCIÓN 1: INFORMACIÓN DE CONTACTO-->
+        <section class="container seccion seccion--contacto">
+            <h2>Pongámonos en contacto</h2>
+            <div class="row contacto">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217954.25340124723!2d-64.33442871949218!3d-31.399377044740607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2sC%C3%B3rdoba%2C%20Cordoba!5e0!3m2!1sen!2sar!4v1630775319627!5m2!1sen!2sar" style="border:0;" allowfullscreen="" loading="lazy" class="col-lg-6 col-md-12 col-sm-12 contacto__mapa"></iframe>
+                <div class="col-lg-6 col-md-12 col-sm-12 d-flex flex-wrap justify-content-between contacto__info">
+                    <article class="contacto__carta" data-aos="fade-right">
+                        <h3 class="contacto__titulo">Dónde estoy</h3>
+                        <p>Córdoba, Argentina</p>
+                    </article>
+                    <article class="contacto__carta" data-aos="fade-left">
+                        <h3 class="contacto__titulo">Horarios</h3>
+                        <p>Lunes a viernes de 10 a.m. a 10 p.m.</p>
+                    </article>
+                    <article class="contacto__carta" data-aos="fade-right">
+                        <h3 class="contacto__titulo">Medios de contacto</h3>
+                        <h4>Correo electrónico</h4>
+                        <p>abrilherrada@gmail.com</p>
+                        <h4>Teléfono</h4>
+                        <p>+5492804604128</p>
+                        <h4>Skype</h4>
+                        <p>live:.cid.f1d78c851a9826c</p>
+                    </article>
+                    <article class="contacto__carta" data-aos="fade-left">
+                        <h3 class="contacto__titulo">Redes profesionales</h3>
+                        <a href="https://www.linkedin.com/in/abril-herrada/" target="_blank"><img class="contacto__icono" src="../media/icono-linked-in.svg" alt="linked in"></a>
+                        <a href="http://www.proz.com/translator/2054918" target="_blank"><img class="contacto__icono" src="../media/icono-proZ.svg" alt="proZ"></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!--SECCIÓN 2: FORMULARIO DE CONTACTO-->
+        <section id="formulario" class="d-flex justify-content-center formulario">
+            <form action="" method="GET">
+                <fieldset class="fieldset">
+                    <legend class="w-auto legend">¿Cómo te puedo ayudar?</legend>
+                    <div class="caja caja--nombre">
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required class="border-0 caja__campo">
+                    </div>
+                    <div class="caja caja--apellido">
+                        <input type="text" name="apellido" id="apellido" placeholder="Apellido" required class="border-0 caja__campo">
+                    </div>
+                    <div class="caja caja--correo">
+                        <input type="text" name="correo" id="correo" placeholder="Correo electrónico" required class="border-0 caja__campo">
+                    </div>
+                    <div class="caja caja--tipo-cliente">
+                        <label for="tipo-cliente">¿Sos un cliente directo o una empresa?</label>
+                        <div>
+                            <input type="radio" name="tipo-cliente" id="tipo-cliente-directo" value="cliente-directo" required class="caja__campo">Cliente directo
+                            <input type="radio" name="tipo-cliente" id="tipo-cliente-empresa" value="empresa" required class="caja__campo">Empresa
+                        </div>
+                    </div>
+                    <div class="caja caja--tipo-servicio">
+                        <label for="tipo-servicio">¿Qué servicio te gustaría cotizar?</label>
+                        <select name="tipo-servicio" id="tipo-servicio" class="border-0 caja__campo">
+                            <option value="seleccionar" disabled selected class="caja__campo__opcion">Seleccionar</option>
+                            <option value="traduccion" class="caja__campo__opcion">Traducción</option>
+                            <option value="localizacion" class="caja__campo__opcion">Localización</option>
+                            <option value="edicion" class="caja__campo__opcion">Edición</option>
+                            <option value="revision" class="caja__campo__opcion">Revisión</option>
+                            <option value="posedicion" class="caja__campo__opcion">Posedición</option>
+                            <option value="subtitulado" class="caja__campo__opcion">Subtitulado</option>
+                        </select>
+                    </div>
+                    <div class="caja caja--palabras">
+                        <label for="palabras">¿Qué cantidad de palabras?</label>
+                        <input type="text" name="palabras" id="palabras" placeholder="Número de palabras" class="border-0 caja__campo">
+                    </div>
+                    <div class="caja caja--urgente">
+                        <input type="checkbox" name="urgente" id="urgente" value="1" class="caja__campo">
+                        <label for="urgente">Necesito la cotización en menos de 24 horas.</label>
+                    </div>
+                    <textarea class="border-0 w-75 caja caja--consultas" placeholder="Si tenés alguna duda, escribila acá."></textarea>
+                    <div class="caja caja--botones">
+                        <input type="reset" value="Borrar" class="border-0 caja__boton caja__boton--borrar">
+                        <input type="submit" value="Enviar" class="btn btn-primary border-0 caja__boton caja__boton--enviar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="titulo-modal">¡Mensaje enviado!</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Gracias por tu mensaje. En breve, recibirás un correo electrónico de mi parte con la respuesta a tu consulta.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary border-0" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <!--FOOTER-->
+    <svg class="borde" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#c1cad6a1" fill-opacity="1" d="M0,224L48,218.7C96,213,192,203,288,192C384,181,480,171,576,192C672,213,768,267,864,277.3C960,288,1056,256,1152,234.7C1248,213,1344,203,1392,197.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <footer class="container-fluid footer">
+        <div class="row">
+            <!--LOGO-->
+            <a href="../index.html" class="col-lg-3 col-md-4 col-sm-12"><img class="logo" src="../media/logo-trazo.png" alt="inicio"></a>
+            <!--CONTACTO-->
+            <div class="col-lg-9 col-md-8 col-sm-12 d-flex flex-wrap justify-content-end justify-content-md-start justify-content-lg-around align-items-center">
+                <div class="d-flex justify-content-around align-items-center footer__contacto">
+                    <i class="fas fa-envelope footer__icono"></i>
+                    <p class="footer__info">abrilherrada@gmail.com</p>
+                </div>
+                <div class="d-flex justify-content-around align-items-center footer__contacto">
+                    <i class="fab fa-linkedin footer__icono"></i>
+                    <p class="footer__info">linkedin.com/in/abril-herrada</p>
+                </div>
+                <div class="d-flex justify-content-around align-items-center footer__contacto">
+                    <i class="fas fa-mobile-alt footer__icono"></i>
+                    <p class="footer__info">+5492804604128</p>
+                </div>
+                <div class="d-flex justify-content-around align-items-center footer__contacto">
+                    <i class="fab fa-skype footer__icono"></i>
+                    <p class="footer__info">live:.cid.f1d78c851a9826c</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {once: true, duration: 1000}
+        );
+    </script>
+    <!--BOOTSTRAP BUNDLE-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

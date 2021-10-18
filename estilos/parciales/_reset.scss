@@ -1,0 +1,76 @@
+@import "./media-queries";
+@import "./variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*CUERPO*/
+body {
+    color: $azul;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    @include celular {
+        font-size: 1.5rem;
+    }
+    @include tablet {
+        font-size: 1.3rem;
+    }
+}
+ul {
+    padding-left: 0;
+}
+ul li {
+    list-style: none;
+}
+a {
+    color: $azul;
+}
+a:hover {
+    color: $azul;
+}
+
+/*TÍTULOS*/
+h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+h2 {
+    color: $rosa;
+    text-align: center;
+    @include celular {
+        font-size: 2rem;
+    }
+    @include tablet {
+        font-size: 1.8rem;
+    }
+}
+h3 {
+    color: $azul;
+    text-align: left;
+    @include celular {
+        font-size: 1.7rem;
+    }
+    @include tablet {
+        font-size: 1.6rem;
+    }
+}
+h4 {
+    color: $azul;
+    text-align: left;
+    @include celular {
+        font-size: 1.6rem;
+    }
+    @include tablet {
+        font-size: 1.4rem;
+    }
+}

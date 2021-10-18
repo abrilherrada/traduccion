@@ -1,0 +1,27 @@
+@import "./media-queries";
+@import "./variables";
+
+/*SOBRE MÍ - SECCIÓN 1*/
+.presentacion--margen {
+    margin-top: 7.5rem;
+}
+
+/*SOBRE MÍ - SECCIÓN 2*/
+.areas {
+    justify-content: space-around;
+    padding: 1rem 0rem;
+    &__especialidad {
+        background-color: $lila-contenedores;
+        height: 9rem;
+        border-radius: $borde-contenedor;
+        font-weight: bold;
+        @include celular {
+            margin-right: 2rem;
+            margin-left: 2rem;
+        }
+        @include tablet {
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
+    }
+}

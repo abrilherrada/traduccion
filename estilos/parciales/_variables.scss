@@ -1,0 +1,20 @@
+$mes-traduccion: false;
+$azul: #1C3144;
+$rosa: #C3979F;
+$amarillo: #E3D888;
+$lila: #C1CAD6;
+$lila-contenedores: #c1cad6a1;
+$borde-btn-campo: 1vh;
+$borde-contenedor: 2vh;
+$sombra-btn: 2px 2px 2px 2px #c3979f6c;
+$margen-footer: -10rem;
+$padding-btn: 0.8rem 0.8rem;
+$botones: (borrar: $rosa, enviar: $amarillo);
+
+@if $mes-traduccion == true {
+    $azul: #1D3557;
+    $rosa: #E63946;
+    $lila: #A8DADC;
+    $amarillo: #FBBA72;
+    $lila-contenedores: #A8DADCa1;
+}

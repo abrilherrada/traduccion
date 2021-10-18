@@ -1,0 +1,34 @@
+@import "./variables";
+
+.error {
+    overflow-y: hidden;
+    &__titulo {
+        font-size: 4rem;
+        margin-top: -4rem;
+        padding: 1.5rem;
+    }
+    &__parrafo {
+        font-size: 1.5rem;
+    }
+    &__boton {
+        text-decoration: none;
+        background-color: $amarillo;
+        color: $azul;
+        padding: 0.8rem 1.2rem;
+        border-radius: $borde-btn-campo;
+        transition: all 1s;
+        margin: 1rem;
+        font-size: 1.5rem;
+    }
+    &__boton:hover {
+        background-color: $rosa;
+        transform: scale(1.2);
+        font-weight: bold;
+        box-shadow: $sombra-btn;
+    }
+    &__boton:active {
+        background-color: $azul;
+        color: $lila;
+        cursor: progress;
+    }
+}

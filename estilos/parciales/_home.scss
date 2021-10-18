@@ -1,0 +1,128 @@
+@import "./media-queries";
+@import "./variables";
+
+/*INDEX - SECCIÓN 1*/
+.hero {
+    background-image: url(../media/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    padding-top: 12rem;
+    animation-name: aparicion-hero;
+    animation-duration: 3s;
+    @keyframes aparicion-hero {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    &__contenedor {
+        background-color: rgba(255, 255, 255, 0.712);
+        padding: 1.25rem;
+        border-radius: $borde-contenedor;
+        text-align: center;
+    }
+    &__titulo {
+        color: $azul;
+        text-shadow: 4px 4px 4px $lila;
+        font-size: 3rem;
+    }
+    &__boton {
+        text-decoration: none;
+        background-color: $amarillo;
+        color: $azul;
+        padding: $padding-btn;
+        border-radius: $borde-btn-campo;
+        transition: all 1s;
+        display: inline-block;
+    }
+    &__boton:hover {
+        background-color: $rosa;
+        transform: scale(1.2);
+        font-weight: bold;
+        box-shadow: $sombra-btn;
+    }
+    &__boton:active {
+        background-color: $azul;
+        color: $lila;
+        cursor: progress;
+    }
+}
+
+/*INDEX - SECCIÓN 2*/
+.presentacion {
+    padding: 2rem;
+    @include celular {
+        padding: 1rem;
+    }
+    @include tablet {
+        padding: 2rem 1rem 1rem 1rem;
+    }
+    &__img {
+        object-fit: cover;
+    }
+    &__info {
+        padding-top: 2rem;
+        @include tablet {
+            padding-top: 1rem;
+        }
+        &__titulo {
+            @include celular {
+                padding-bottom: 1rem;
+            }
+            @include tablet {
+                padding-bottom: 0.5rem;
+            }
+        }
+    }
+}
+
+/*INDEX - SECCIÓN 3*/
+.servicios-corto {
+    padding: 1rem 0rem;
+    justify-content: space-around;
+    &__carta {
+        background-color: $lila-contenedores;
+        height: 15rem;
+        border-radius: $borde-contenedor;
+        @include celular {
+            height: 10rem;
+        }
+    }
+    &__icono {
+        font-size: 1.8rem;
+        color: $rosa;
+        @include celular {
+            font-size: 2rem;
+        }
+        @include tablet {
+            font-size: 2.5rem;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 1rem;
+    }
+    &__link:hover {
+        color: $rosa;
+    }
+}
+
+/*INDEX - SECCIÓN 4*/
+.contacto-inicio {
+    padding: 2rem;
+    @include celular {
+        padding-top: 1rem;
+    }
+    @include tablet {
+        padding-top: 1rem;
+    }
+    &__boton {
+        @extend .hero__boton;
+    }
+}

@@ -1,0 +1,100 @@
+@import "./media-queries";
+@import "./variables";
+
+/*OPINIONES*/
+.seccion {
+    .contenedor {
+        .slide-left {
+            -webkit-animation: slide-left 2.5s cubic-bezier(0.190, 1.000, 0.220, 1.000) both;
+                    animation: slide-left 2.5s cubic-bezier(0.190, 1.000, 0.220, 1.000) both;
+        }
+        @for $i from 1 through 3 {
+            .opinion-#{$i} {animation-delay: 0.2s * $i;}
+        }
+        @-webkit-keyframes slide-left {
+            0% {
+                -webkit-transform: translateX(500px);
+                    transform: translateX(500px);
+                    opacity: 0;
+            }
+            100% {
+                -webkit-transform: translateX(0);
+                    transform: translateX(0);
+                    opacity: 1;
+            }
+        }
+        @keyframes slide-left {
+            0% {
+                -webkit-transform: translateX(500px);
+                    transform: translateX(500px);
+                    opacity: 0;
+            }
+            100% {
+                -webkit-transform: translateX(0);
+                    transform: translateX(0);
+                    opacity: 1;
+            }
+        }
+        @include celular {
+            @-webkit-keyframes slide-left {
+                0% {
+                    -webkit-transform: translateX(0);
+                        transform: translateX(0);
+                        opacity: 0;
+                }
+                100% {
+                    -webkit-transform: translateX(0);
+                        transform: translateX(0);
+                        opacity: 1;
+                }
+            }
+            @keyframes slide-left {
+                0% {
+                    -webkit-transform: translateX(0);
+                        transform: translateX(0);
+                        opacity: 0;
+                }
+                100% {
+                    -webkit-transform: translateX(0);
+                        transform: translateX(0);
+                        opacity: 1;
+                }
+            }
+        }
+        @include tablet {
+            @-webkit-keyframes slide-left {
+                0% {
+                    -webkit-transform: translateX(0);
+                        transform: translateX(0);
+                        opacity: 0;
+                }
+                100% {
+                    -webkit-transform: translateX(0);
+                        transform: translateX(0);
+                        opacity: 1;
+                }
+            }
+            @keyframes slide-left {
+                0% {
+                    -webkit-transform: translateX(0);
+                        transform: translateX(0);
+                        opacity: 0;
+                }
+                100% {
+                    -webkit-transform: translateX(0);
+                        transform: translateX(0);
+                        opacity: 1;
+                }
+            }
+        }
+        &__avatar {
+            width: 6rem;
+            height: 6rem;
+            object-fit: cover;
+            border: 5px solid $rosa;
+        }
+        &__nombre {
+            padding: 1rem;
+        }
+    }
+}

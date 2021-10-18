@@ -1,0 +1,273 @@
+@import "./media-queries";
+@import "./variables";
+
+/*CONTACTO - SECCIÓN 1*/
+.seccion {
+    .contacto {
+        padding: 1rem 0rem;
+        @include celular {
+            padding: 0rem;
+        }
+        @include tablet {
+            padding: 0rem;
+        }
+        &__mapa {
+            height: 450px;
+        }
+        &__info {
+            padding-top: 0.5rem;
+            @include celular {
+                padding-top: 1rem;
+            }
+            @include tablet {
+                padding-top: 1rem;
+            }
+        }
+        &__carta {
+            width: 50%;
+            padding: 0.5rem;
+            @include celular {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            @include tablet {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        &__titulo {
+            color: $lila;
+        }
+        &__icono {
+            width: 2.5rem;
+        }
+    }
+    &--contacto {
+        @include celular {
+            padding: 1rem;
+        }
+    }
+}
+
+/*CONTACTO - SECCIÓN 2*/
+.formulario {
+    margin: 1rem;
+    @include celular {
+        padding: 1rem;
+    }
+    @include tablet {
+        padding: 1rem;
+    }
+    .fieldset {
+        border: 1px solid white;
+        border-radius: $borde-btn-campo;
+        padding: 1vh;
+        box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.4);
+        display: grid;
+        grid-template: 
+            "nombre apellido"
+            "correo correo"
+            "tipo-cliente tipo-cliente"
+            "tipo-servicio palabras"
+            "urgente urgente"
+            "consultas consultas"
+            "botones botones";
+        justify-items: center;
+        align-items: center;
+        @include celular {
+            grid-template: 
+                "nombre"
+                "apellido"
+                "correo"
+                "tipo-cliente"
+                "tipo-servicio"
+                "palabras"
+                "urgente"
+                "consultas"
+                "botones";
+        }
+        @include tablet {
+            grid-template: 
+                "nombre"
+                "apellido"
+                "correo"
+                "tipo-cliente"
+                "tipo-servicio"
+                "palabras"
+                "urgente"
+                "consultas"
+                "botones";
+        }
+        .legend {
+            color: $rosa;
+            font-weight: bold;
+            background-color: white;
+            text-align: center;
+            float: none;
+            @include celular {
+                font-size: 1.8rem;
+            }
+            @include tablet {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+.caja {
+    margin: 0rem 1rem;
+    &__campo {
+        background-color: $lila;
+        border-radius: $borde-btn-campo;
+        padding: 0.5rem;
+        margin: 1rem;
+    }
+    &__campo:focus {
+        background-color: $azul;
+        color: $lila;
+    }
+    &__boton {
+        color: $azul;
+        border-radius: $borde-btn-campo;
+        width: 6rem;
+        height: 3rem;
+        padding: 0.5rem;
+        margin: 1rem;
+        transition: all 1s;
+        font-size: 1.1rem;
+        @each $boton, $color in $botones {
+            &--#{$boton} {
+                background-color: $color;
+            }
+        }
+    }
+    &__boton:hover {
+        background-color: $lila;
+        color: $azul;
+        transform: scale(1.1);
+        font-weight: bold;
+        box-shadow: $sombra-btn;
+    }
+    &__boton:active {
+        @extend .hero__boton:active;
+    }
+    &__boton:focus {
+        color: $lila;
+        background-color: $azul;
+        box-shadow: $sombra-btn;
+    } 
+    &__boton:active:focus {
+        box-shadow: $sombra-btn;
+    }
+    &--nombre {
+        grid-row: 1;
+        grid-column: 1;
+        grid-area: nombre;
+    }
+    &--apellido {
+        grid-row: 1;
+        grid-column: 2;
+        grid-area: apellido;
+    }
+    &--correo {
+        grid-row: 2;
+        grid-column: 1;
+        grid-area: correo;
+    }
+    &--tipo-cliente {
+        grid-row: 3;
+        grid-column: 1;
+        grid-area: tipo-cliente;
+        .caja__campo {
+            @include celular {
+                width: 20%;
+            }
+        }
+        @include tablet {
+            margin: 1rem;
+        }
+    }
+    &--tipo-servicio {
+        grid-row: 4;
+        grid-column: 1;
+        grid-area: tipo-servicio;
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+        }
+        .caja__campo {
+            &__opcion {
+                @include celular {
+                    font-size: 0.9rem;
+                }
+                @include tablet {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+    &--palabras {
+        grid-row: 4;
+        grid-column: 2;
+        grid-area: palabras;
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &--urgente {
+        grid-row: 5;
+        grid-column: 1;
+        grid-area: urgente;
+        @include celular {
+            display: flex;
+        }
+        @include tablet {
+            display: flex;
+        }
+    }
+    &--consultas {
+        grid-row: 6;
+        grid-column: 1;
+        grid-area: consultas;
+        background-color: $lila;
+        border-radius: $borde-btn-campo;
+        padding: 0.5rem;
+        margin: 1rem;
+    }
+    &--consultas:focus {
+        background-color: $azul;
+    }
+    &--botones {
+        grid-row: 7;
+        grid-column: 1;
+        grid-area: botones;
+    }
+}
+#titulo-modal {
+    color: $rosa;
+    font-weight: bold;
+}
+.btn-secondary {
+    background-color: $rosa;
+    color: $azul;
+    border-radius: $borde-btn-campo;
+    width: 5rem;
+    height: 2.5rem;
+    transition: all 1s;
+}
+.btn-secondary:hover {
+    @extend .caja__boton:hover;
+}
+.btn-secondary:active {
+    @extend .hero__boton:active;
+}
+.btn-secondary:focus {
+    @extend .caja__boton:focus;
+}
+.btn-secondary:active:focus {
+    @extend .caja__boton:active:focus;
+}
