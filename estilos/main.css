@@ -189,6 +189,10 @@ header {
   }
 }
 
+.footer__contacto a {
+  text-decoration: none;
+}
+
 .footer__icono {
   font-size: 1.25rem;
   margin: 0.5rem;

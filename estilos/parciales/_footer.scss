@@ -27,6 +27,9 @@
         @include tablet {
             margin-bottom: 0.5rem;
         }
+        a {
+            text-decoration: none;
+        }
     }
     &__icono {
         font-size: 1.25rem;
