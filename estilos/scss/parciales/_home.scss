@@ -24,10 +24,10 @@
         padding: 1.25rem;
         border-radius: $borde-contenedor;
         text-align: center;
+        box-shadow: 10px 10px 20px $lila;
     }
     &__titulo {
         color: $azul;
-        text-shadow: 4px 4px 4px $lila;
         font-size: 3rem;
     }
     &__boton {
@@ -36,13 +36,12 @@
         color: $azul;
         padding: $padding-btn;
         border-radius: $borde-btn-campo;
-        transition: all 1s;
+        transition: all 0.5s;
         display: inline-block;
     }
     &__boton:hover {
         background-color: $rosa;
-        transform: scale(1.2);
-        font-weight: bold;
+        transform: scale(1.1);
         box-shadow: $sombra-btn;
     }
     &__boton:active {
@@ -81,35 +80,52 @@
 }
 
 /*INDEX - SECCIÓN 3*/
-.servicios-corto {
+.servicios {
     padding: 1rem 0rem;
-    justify-content: space-around;
     &__carta {
-        background-color: $lila-contenedores;
-        height: 15rem;
+        background-color: white;
         border-radius: $borde-contenedor;
+        box-shadow: 10px 10px 20px $lila;
+        transition: all 0.5s;
+    }
+    &__carta:hover {
+        box-shadow: 10px 10px 20px #9aa3af;
+    }
+    &__borde {
+        border-radius: $borde-contenedor;
+        width: 100%;
+    }
+    &__servicio {
+        font-size: 1.5rem;
+        font-weight: bold;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -0.125rem;
+            left: -0.5rem;
+            right: -0.5rem;
+            height: 0.75rem;
+            z-index: -1;
+            background-image: url('../../../media/underline.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    &__boton {
+        @extend .hero__boton;
+        margin: 0rem 1rem 1rem 1rem;
+    }
+}
+.servicios--corto {
+    &__carta {
+        height: 15rem;
         @include celular {
             height: 10rem;
         }
     }
-    &__icono {
-        font-size: 1.8rem;
-        color: $rosa;
-        @include celular {
-            font-size: 2rem;
-        }
-        @include tablet {
-            font-size: 2.5rem;
-        }
-    }
-    &__link {
-        text-decoration: none;
-        font-weight: bold;
-        text-transform: uppercase;
-        padding: 1rem;
-    }
-    &__link:hover {
-        color: $rosa;
+    &__boton {
+        align-self: flex-end;
     }
 }
 

@@ -1,0 +1,18 @@
+@import "./variables";
+
+/*SERVICIOS*/
+.seccion {
+    padding: 1rem 0rem;
+    margin-top: 8rem;
+}
+.servicios {
+    &__icono {
+        font-size: 1.8rem;
+        color: $rosa;
+        padding: 1rem;
+    }
+    &__parrafo {
+        padding: 1rem;
+        text-align: center;
+    }
+}
