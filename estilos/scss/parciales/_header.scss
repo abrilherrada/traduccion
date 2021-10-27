@@ -4,6 +4,9 @@
 /*MENÚ DE NAVEGACIÓN*/
 .logo {
     width: 15rem;
+    @include celular {
+        width: 13rem;
+    }
 }
 nav.navbar-light {
     background-color: rgba(255, 255, 255, 0.836);

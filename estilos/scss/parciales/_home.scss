@@ -29,6 +29,9 @@
     &__titulo {
         color: $azul;
         font-size: 3rem;
+        @include celular {
+            font-size: 2.5rem;
+        }
     }
     &__boton {
         text-decoration: none;
@@ -111,10 +114,17 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+        @include celular {
+            font-size: 1.8rem;
+        }
     }
     &__boton {
         @extend .hero__boton;
         margin: 0rem 1rem 1rem 1rem;
+        @include celular {
+            padding: 0.4rem 0.5rem;
+            margin: 0.5rem;
+        }
     }
 }
 .servicios--corto {
