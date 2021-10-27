@@ -90,6 +90,7 @@
         border-radius: $borde-contenedor;
         box-shadow: 10px 10px 20px $lila;
         transition: all 0.5s;
+        height: auto;
     }
     &__carta:hover {
         box-shadow: 10px 10px 20px #9aa3af;
@@ -131,7 +132,7 @@
     &__carta {
         height: 15rem;
         @include celular {
-            height: 10rem;
+            height: 15rem;
         }
     }
     &__boton {

@@ -342,6 +342,7 @@ header {
           box-shadow: 10px 10px 20px #C1CAD6;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  height: auto;
 }
 
 .servicios__carta:hover {
@@ -396,7 +397,7 @@ header {
 
 @media screen and (max-width: 480px) {
   .servicios--corto__carta {
-    height: 10rem;
+    height: 15rem;
   }
 }
 
