@@ -369,7 +369,7 @@ header {
   right: -0.5rem;
   height: 0.75rem;
   z-index: -1;
-  background-image: url("../../../media/underline.svg");
+  background-image: url("../media/underline.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -576,7 +576,7 @@ header {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   padding: 1rem;
-  background-image: url("../../../media/wave.svg");
+  background-image: url("../media/wave.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
