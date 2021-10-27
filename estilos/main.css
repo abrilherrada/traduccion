@@ -395,12 +395,6 @@ header {
   height: 15rem;
 }
 
-@media screen and (max-width: 480px) {
-  .servicios--corto__carta {
-    height: 15rem;
-  }
-}
-
 .servicios--corto__boton {
   -ms-flex-item-align: end;
       align-self: flex-end;

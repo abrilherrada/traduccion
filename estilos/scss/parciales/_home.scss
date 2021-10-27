@@ -131,9 +131,6 @@
 .servicios--corto {
     &__carta {
         height: 15rem;
-        @include celular {
-            height: 15rem;
-        }
     }
     &__boton {
         align-self: flex-end;
