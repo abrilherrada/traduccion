@@ -44,6 +44,7 @@
         }
         &__icono {
             width: 2.5rem;
+            margin: 0.5rem;
         }
     }
     &--contacto {
@@ -55,18 +56,12 @@
 
 /*CONTACTO - SECCIÓN 2*/
 .formulario {
-    padding: 1rem;
-    @include celular {
-        padding: 1rem;
-        width: 100%;
-    }
-    @include tablet {
-        padding: 1rem;
-    }
+    padding: 1rem 1rem 4rem 1rem;
     .fieldset {
         border: 1px solid white;
         border-radius: $borde-btn-campo;
         padding: 1vh;
+        margin: auto;
         box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.4);
         display: grid;
         grid-template: 
@@ -110,25 +105,32 @@
             text-align: center;
             float: none;
             @include celular {
-                font-size: 1.8rem;
+                font-size: 1.7rem;
             }
             @include tablet {
-                font-size: 2rem;
+                font-size: 1.7rem;
             }
         }
     }
 }
 .caja {
     margin: 0rem 1rem;
+    text-align: center;
+    width: 75%;
     &__campo {
         background-color: $lila;
         border-radius: $borde-btn-campo;
         padding: 0.5rem;
-        margin: 1rem;
+        margin: 1rem 0.5rem;
+        width: 100%;
     }
     &__campo:focus {
         background-color: $azul;
         color: $lila;
+    }
+
+    &__check {
+        margin: 1rem 0.5rem;
     }
     &__boton {
         color: $azul;
@@ -182,11 +184,6 @@
         grid-row: 3;
         grid-column: 1;
         grid-area: tipo-cliente;
-        .caja__campo {
-            @include celular {
-                width: 20%;
-            }
-        }
         @include tablet {
             margin: 1rem;
         }

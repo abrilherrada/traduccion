@@ -51,15 +51,15 @@
             <div class="row contacto">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217954.25340124723!2d-64.33442871949218!3d-31.399377044740607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2sC%C3%B3rdoba%2C%20Cordoba!5e0!3m2!1sen!2sar!4v1630775319627!5m2!1sen!2sar" style="border:0;" allowfullscreen="" loading="lazy" class="col-lg-6 col-md-12 col-sm-12 contacto__mapa"></iframe>
                 <div class="col-lg-6 col-md-12 col-sm-12 d-flex flex-wrap justify-content-between contacto__info">
-                    <article class="contacto__carta" data-aos="fade-right">
+                    <article class="contacto__carta" data-aos="zoom-in">
                         <h3 class="contacto__titulo">Dónde estoy</h3>
                         <p>Córdoba, Argentina</p>
                     </article>
-                    <article class="contacto__carta" data-aos="fade-left">
+                    <article class="contacto__carta" data-aos="zoom-in">
                         <h3 class="contacto__titulo">Horarios</h3>
                         <p>Lunes a viernes de 10 a.m. a 10 p.m.</p>
                     </article>
-                    <article class="contacto__carta" data-aos="fade-right">
+                    <article class="contacto__carta" data-aos="zoom-in">
                         <h3 class="contacto__titulo">Medios de contacto</h3>
                         <h4>Correo electrónico</h4>
                         <p>abrilherrada@gmail.com</p>
@@ -68,7 +68,7 @@
                         <h4>Skype</h4>
                         <p>live:.cid.f1d78c851a9826c</p>
                     </article>
-                    <article class="contacto__carta" data-aos="fade-left">
+                    <article class="contacto__carta" data-aos="zoom-in">
                         <h3 class="contacto__titulo">Redes profesionales</h3>
                         <a href="https://www.linkedin.com/in/abril-herrada/" target="_blank"><img class="contacto__icono" src="../media/icono-linked-in.svg" alt="linked in"></a>
                         <a href="http://www.proz.com/translator/2054918" target="_blank"><img class="contacto__icono" src="../media/icono-proZ.svg" alt="proZ"></a>
@@ -77,9 +77,9 @@
             </div>
         </section>
         <!--SECCIÓN 2: FORMULARIO DE CONTACTO-->
-        <section id="formulario" class="d-flex justify-content-center formulario">
-            <form action="" method="GET">
-                <fieldset class="fieldset">
+        <section id="formulario" class="container formulario">
+            <form class="row" action="" method="GET">
+                <fieldset class="col-lg-8 col-md-12 col-sm-12 fieldset">
                     <legend class="w-auto legend">¿Cómo te puedo ayudar?</legend>
                     <div class="caja caja--nombre">
                         <input type="text" name="nombre" id="nombre" placeholder="Nombre" required class="border-0 caja__campo">
@@ -93,8 +93,12 @@
                     <div class="caja caja--tipo-cliente">
                         <label for="tipo-cliente">¿Sos un cliente directo o una empresa?</label>
                         <div>
-                            <input type="radio" name="tipo-cliente" id="tipo-cliente-directo" value="cliente-directo" required class="caja__campo">Cliente directo
-                            <input type="radio" name="tipo-cliente" id="tipo-cliente-empresa" value="empresa" required class="caja__campo">Empresa
+                            <input type="radio" name="tipo-cliente" id="tipo-cliente-directo" value="cliente-directo" required class="caja__check">
+                            <label for="tipo-cliente-directo">Cliente directo</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="tipo-cliente" id="tipo-cliente-empresa" value="empresa" required class="caja__check">
+                            <label for="tipo-cliente-empresa">Empresa</label>
                         </div>
                     </div>
                     <div class="caja caja--tipo-servicio">
@@ -110,14 +114,14 @@
                         </select>
                     </div>
                     <div class="caja caja--palabras">
-                        <label for="palabras">¿Qué cantidad de palabras?</label>
+                        <label for="palabras">¿Qué cantidad de palabras tiene el?</label>
                         <input type="text" name="palabras" id="palabras" placeholder="Número de palabras" class="border-0 caja__campo">
                     </div>
                     <div class="caja caja--urgente">
-                        <input type="checkbox" name="urgente" id="urgente" value="1" class="caja__campo">
+                        <input type="checkbox" name="urgente" id="urgente" value="1" class="caja__check">
                         <label for="urgente">Necesito la cotización en menos de 24 horas.</label>
                     </div>
-                    <textarea class="border-0 w-75 caja caja--consultas" placeholder="Si tenés alguna duda, escribila acá."></textarea>
+                    <textarea class="border-0 caja caja--consultas" placeholder="Si tenés alguna duda, escribila acá."></textarea>
                     <div class="caja caja--botones">
                         <input type="reset" value="Borrar" class="border-0 caja__boton caja__boton--borrar">
                         <input type="submit" value="Enviar" class="btn btn-primary border-0 caja__boton caja__boton--enviar" data-bs-toggle="modal" data-bs-target="#exampleModal">

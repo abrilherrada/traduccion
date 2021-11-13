@@ -23,7 +23,7 @@ body {
 
 @media screen and (max-width: 480px) {
   body {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -64,7 +64,7 @@ h2 {
 
 @media screen and (max-width: 480px) {
   h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -81,7 +81,7 @@ h3 {
 
 @media screen and (max-width: 480px) {
   h3 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -98,7 +98,7 @@ h4 {
 
 @media screen and (max-width: 480px) {
   h4 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -678,6 +678,7 @@ header {
 
 .seccion .contacto__icono {
   width: 2.5rem;
+  margin: 0.5rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -688,26 +689,14 @@ header {
 
 /*CONTACTO - SECCIÓN 2*/
 .formulario {
-  padding: 1rem;
-}
-
-@media screen and (max-width: 480px) {
-  .formulario {
-    padding: 1rem;
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 991px) {
-  .formulario {
-    padding: 1rem;
-  }
+  padding: 1rem 1rem 4rem 1rem;
 }
 
 .formulario .fieldset {
   border: 1px solid white;
   border-radius: 1vh;
   padding: 1vh;
+  margin: auto;
   -webkit-box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.4);
           box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.4);
   display: -ms-grid;
@@ -741,30 +730,37 @@ header {
 
 @media screen and (max-width: 480px) {
   .formulario .fieldset .legend {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 }
 
 @media screen and (min-width: 481px) and (max-width: 991px) {
   .formulario .fieldset .legend {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }
 
 .caja {
   margin: 0rem 1rem;
+  text-align: center;
+  width: 75%;
 }
 
 .caja__campo {
   background-color: #C1CAD6;
   border-radius: 1vh;
   padding: 0.5rem;
-  margin: 1rem;
+  margin: 1rem 0.5rem;
+  width: 100%;
 }
 
 .caja__campo:focus {
   background-color: #1C3144;
   color: #C1CAD6;
+}
+
+.caja__check {
+  margin: 1rem 0.5rem;
 }
 
 .caja__boton {
@@ -839,12 +835,6 @@ header {
   -ms-grid-column: 1;
   grid-column: 1;
   grid-area: tipo-cliente;
-}
-
-@media screen and (max-width: 480px) {
-  .caja--tipo-cliente .caja__campo {
-    width: 20%;
-  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 991px) {
