@@ -18,9 +18,11 @@
             padding-top: 0.5rem;
             @include celular {
                 padding-top: 1rem;
+                text-align: center;
             }
             @include tablet {
                 padding-top: 1rem;
+                text-align: center;
             }
         }
         &__carta {
@@ -56,13 +58,13 @@
 
 /*CONTACTO - SECCIÓN 2*/
 .formulario {
-    padding: 1rem 1rem 4rem 1rem;
+    padding: 1rem 1.5rem 3rem 1.5rem;
     .fieldset {
         border: 1px solid white;
         border-radius: $borde-btn-campo;
         padding: 1vh;
         margin: auto;
-        box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.4);
+        box-shadow: 10px 10px 20px $lila;
         display: grid;
         grid-template: 
             "nombre apellido"
@@ -243,6 +245,7 @@
         grid-row: 7;
         grid-column: 1;
         grid-area: botones;
+        width: auto;
     }
 }
 #titulo-modal {

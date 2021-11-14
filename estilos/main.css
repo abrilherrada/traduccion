@@ -120,7 +120,7 @@ h4 {
 }
 
 nav.navbar-light {
-  background-color: rgba(255, 255, 255, 0.836);
+  background-color: rgba(255, 255, 255, 0.925);
 }
 
 nav.navbar-light .navbar-nav .nav-link {
@@ -424,30 +424,20 @@ header {
 
 /*SOBRE MÍ - SECCIÓN 2*/
 .areas {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   padding: 1rem 0rem;
+  position: relative;
 }
 
 .areas__especialidad {
-  background-color: #c1cad6a1;
-  height: 9rem;
-  border-radius: 2vh;
+  width: 12rem;
+  height: 12rem;
   font-weight: bold;
 }
 
-@media screen and (max-width: 480px) {
-  .areas__especialidad {
-    margin-right: 2rem;
-    margin-left: 2rem;
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 991px) {
-  .areas__especialidad {
-    margin-right: 1rem;
-    margin-left: 1rem;
-  }
+.areas__fondo {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
 }
 
 /*SERVICIOS*/
@@ -626,12 +616,14 @@ header {
 @media screen and (max-width: 480px) {
   .seccion .contacto__info {
     padding-top: 1rem;
+    text-align: center;
   }
 }
 
 @media screen and (min-width: 481px) and (max-width: 991px) {
   .seccion .contacto__info {
     padding-top: 1rem;
+    text-align: center;
   }
 }
 
@@ -689,7 +681,7 @@ header {
 
 /*CONTACTO - SECCIÓN 2*/
 .formulario {
-  padding: 1rem 1rem 4rem 1rem;
+  padding: 1rem 1.5rem 3rem 1.5rem;
 }
 
 .formulario .fieldset {
@@ -697,8 +689,8 @@ header {
   border-radius: 1vh;
   padding: 1vh;
   margin: auto;
-  -webkit-box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.4);
-          box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.4);
+  -webkit-box-shadow: 10px 10px 20px #C1CAD6;
+          box-shadow: 10px 10px 20px #C1CAD6;
   display: -ms-grid;
   display: grid;
   grid-template: "nombre apellido" "correo correo" "tipo-cliente tipo-cliente" "tipo-servicio palabras" "urgente urgente" "consultas consultas" "botones botones";
@@ -941,6 +933,7 @@ header {
   -ms-grid-column: 1;
   grid-column: 1;
   grid-area: botones;
+  width: auto;
 }
 
 #titulo-modal {

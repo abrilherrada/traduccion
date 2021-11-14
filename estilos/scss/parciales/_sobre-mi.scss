@@ -8,20 +8,16 @@
 
 /*SOBRE MÍ - SECCIÓN 2*/
 .areas {
-    justify-content: space-around;
     padding: 1rem 0rem;
+    position: relative;
     &__especialidad {
-        background-color: $lila-contenedores;
-        height: 9rem;
-        border-radius: $borde-contenedor;
+        width: 12rem;
+        height: 12rem;
         font-weight: bold;
-        @include celular {
-            margin-right: 2rem;
-            margin-left: 2rem;
-        }
-        @include tablet {
-            margin-right: 1rem;
-            margin-left: 1rem;
-        }
+    }
+    &__fondo {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
     }
 }
