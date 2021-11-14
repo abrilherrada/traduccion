@@ -15,7 +15,6 @@
             height: 450px;
         }
         &__info {
-            padding-top: 0.5rem;
             @include celular {
                 padding-top: 1rem;
                 text-align: center;
@@ -194,17 +193,13 @@
         grid-row: 4;
         grid-column: 1;
         grid-area: tipo-servicio;
-        @include tablet {
-            display: flex;
-            flex-direction: column;
-        }
         .caja__campo {
             &__opcion {
                 @include celular {
-                    font-size: 0.9rem;
+                    font-size: 1rem;
                 }
                 @include tablet {
-                    font-size: 0.9rem;
+                    font-size: 1rem;
                 }
             }
         }
@@ -213,10 +208,6 @@
         grid-row: 4;
         grid-column: 2;
         grid-area: palabras;
-        @include tablet {
-            display: flex;
-            flex-direction: column;
-        }
     }
     &--urgente {
         grid-row: 5;

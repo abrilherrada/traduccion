@@ -13,17 +13,11 @@ body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.5;
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-    @include celular {
-        font-size: 1.3rem;
-    }
-    @include tablet {
-        font-size: 1.3rem;
-    }
 }
 ul {
     padding-left: 0;
