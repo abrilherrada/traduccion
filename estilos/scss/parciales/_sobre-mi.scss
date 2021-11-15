@@ -21,3 +21,10 @@
         width: 100%;
     }
 }
+
+/*SOBRE MÍ - SECCIÓN 3*/
+.capacitaciones {
+    @include tablet {
+        padding-bottom: 2rem;
+    }
+}

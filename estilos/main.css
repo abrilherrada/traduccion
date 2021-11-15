@@ -139,6 +139,22 @@ header {
 }
 
 /*FOOTER*/
+.pie {
+  margin-top: 4rem;
+}
+
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .pie {
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pie {
+    margin-top: 0;
+  }
+}
+
 .borde {
   display: block;
   margin-top: -10rem;
@@ -168,18 +184,6 @@ header {
 
 .footer__contacto {
   margin: 0rem 1rem;
-}
-
-@media screen and (max-width: 480px) {
-  .footer__contacto {
-    margin-bottom: 0.5rem;
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 991px) {
-  .footer__contacto {
-    margin-bottom: 0.5rem;
-  }
 }
 
 .footer__contacto a {
@@ -379,7 +383,13 @@ header {
 
 /*INDEX - SECCIÓN 4*/
 .contacto-inicio {
-  padding: 2rem;
+  padding: 2rem 2rem 0rem 2rem;
+}
+
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .contacto-inicio {
+    padding-bottom: 2rem;
+  }
 }
 
 /*SOBRE MÍ - SECCIÓN 1*/
@@ -405,10 +415,23 @@ header {
   width: 100%;
 }
 
+/*SOBRE MÍ - SECCIÓN 3*/
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .capacitaciones {
+    padding-bottom: 2rem;
+  }
+}
+
 /*SERVICIOS*/
 .seccion {
   padding: 1rem;
   margin-top: 8rem;
+}
+
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .seccion {
+    padding-bottom: 2rem;
+  }
 }
 
 .servicios__icono {
@@ -654,7 +677,13 @@ header {
 
 /*CONTACTO - SECCIÓN 2*/
 .formulario {
-  padding: 1rem 1.5rem 3rem 1.5rem;
+  padding: 1rem 1.5rem 2rem 1.5rem;
+}
+
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .formulario {
+    padding-bottom: 3rem;
+  }
 }
 
 .formulario .fieldset {
@@ -884,21 +913,6 @@ header {
   grid-column: 1;
   grid-area: botones;
   width: auto;
-}
-
-#titulo-modal {
-  color: #C3979F;
-  font-weight: bold;
-}
-
-.btn-secondary {
-  background-color: #C3979F;
-  color: #1C3144;
-  border-radius: 1vh;
-  width: 5rem;
-  height: 2.5rem;
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
 
 .error {

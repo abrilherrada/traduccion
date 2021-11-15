@@ -133,7 +133,10 @@
 
 /*INDEX - SECCIÓN 4*/
 .contacto-inicio {
-    padding: 2rem;
+    padding: 2rem 2rem 0rem 2rem;
+    @include tablet {
+        padding-bottom: 2rem;
+    }
     &__boton {
         @extend .hero__boton;
     }

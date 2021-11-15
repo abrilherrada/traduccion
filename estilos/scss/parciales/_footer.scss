@@ -2,6 +2,15 @@
 @import "./variables";
 
 /*FOOTER*/
+.pie {
+    margin-top: 4rem;
+    @include tablet {
+        margin-top: 0.5rem;
+    }
+    @include celular {
+        margin-top: 0;
+    }
+}
 .borde {
     display: block;
     margin-top: $margen-footer;
@@ -21,12 +30,6 @@
     }
     &__contacto {
         margin: 0rem 1rem;
-        @include celular {
-            margin-bottom: 0.5rem;
-        }
-        @include tablet {
-            margin-bottom: 0.5rem;
-        }
         a {
             text-decoration: none;
         }

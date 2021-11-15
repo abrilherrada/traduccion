@@ -57,7 +57,10 @@
 
 /*CONTACTO - SECCIÓN 2*/
 .formulario {
-    padding: 1rem 1.5rem 3rem 1.5rem;
+    padding: 1rem 1.5rem 2rem 1.5rem;
+    @include tablet {
+        padding-bottom: 3rem;
+    }
     .fieldset {
         border: 1px solid white;
         border-radius: $borde-btn-campo;
@@ -239,16 +242,4 @@
         grid-area: botones;
         width: auto;
     }
-}
-#titulo-modal {
-    color: $rosa;
-    font-weight: bold;
-}
-.btn-secondary {
-    background-color: $rosa;
-    color: $azul;
-    border-radius: $borde-btn-campo;
-    width: 5rem;
-    height: 2.5rem;
-    transition: all 1s;
 }
