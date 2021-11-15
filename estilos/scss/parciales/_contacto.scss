@@ -196,10 +196,10 @@
         .caja__campo {
             &__opcion {
                 @include celular {
-                    font-size: 1rem;
+                    font-size: 1.3rem;
                 }
                 @include tablet {
-                    font-size: 1rem;
+                    font-size: 1.3rem;
                 }
             }
         }
@@ -231,6 +231,7 @@
     }
     &--consultas:focus {
         background-color: $azul;
+        color: $lila;
     }
     &--botones {
         grid-row: 7;
@@ -250,16 +251,4 @@
     width: 5rem;
     height: 2.5rem;
     transition: all 1s;
-}
-.btn-secondary:hover {
-    @extend .caja__boton:hover;
-}
-.btn-secondary:active {
-    @extend .hero__boton:active;
-}
-.btn-secondary:focus {
-    @extend .caja__boton:focus;
-}
-.btn-secondary:active:focus {
-    @extend .caja__boton:active:focus;
 }

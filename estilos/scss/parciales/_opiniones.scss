@@ -95,9 +95,12 @@
         background-image: url('../media/wave.svg');
         background-repeat: no-repeat;
         background-size: cover;
-    }
-    &__carta:hover {
-        box-shadow: 10px 10px 20px #9aa3af;
+        @include tablet {
+            text-align: center;
+        }
+        @include celular {
+            text-align: center;
+        }
     }
     &__avatar {
         width: 5rem;

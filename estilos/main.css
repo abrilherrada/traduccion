@@ -64,7 +64,6 @@ h2 {
 
 h3 {
   color: #1C3144;
-  text-align: left;
 }
 
 @media screen and (max-width: 480px) {
@@ -203,6 +202,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  min-height: 100vh;
   margin: 0;
   padding-top: 12rem;
   -webkit-animation-name: aparicion-hero;
@@ -232,6 +232,7 @@ header {
 .hero__contenedor {
   background-color: rgba(255, 255, 255, 0.712);
   padding: 1.25rem;
+  margin-bottom: 1.5rem;
   border-radius: 2vh;
   text-align: center;
   -webkit-box-shadow: 10px 10px 20px #C1CAD6;
@@ -268,7 +269,7 @@ header {
           box-shadow: 2px 2px 2px 2px #c3979f6c;
 }
 
-.hero__boton:active, .servicios__boton:active, .contacto-inicio__boton:active, .caja__boton:active, .btn-secondary:active {
+.hero__boton:active, .servicios__boton:active, .contacto-inicio__boton:active, .caja__boton:active {
   background-color: #1C3144;
   color: #C1CAD6;
   cursor: progress;
@@ -303,18 +304,6 @@ header {
 @media screen and (min-width: 481px) and (max-width: 991px) {
   .presentacion__info {
     padding-top: 1rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .presentacion__info__titulo {
-    padding-bottom: 1rem;
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 991px) {
-  .presentacion__info__titulo {
-    padding-bottom: 0.5rem;
   }
 }
 
@@ -433,6 +422,11 @@ header {
   text-align: center;
 }
 
+.servicios__carta--largo:hover {
+  -webkit-box-shadow: 10px 10px 20px #C1CAD6;
+          box-shadow: 10px 10px 20px #C1CAD6;
+}
+
 /*OPINIONES*/
 .opiniones .slide-left {
   -webkit-animation: slide-left 2.5s cubic-bezier(0.19, 1, 0.22, 1) both;
@@ -547,9 +541,16 @@ header {
   background-size: cover;
 }
 
-.opiniones__carta:hover {
-  -webkit-box-shadow: 10px 10px 20px #9aa3af;
-          box-shadow: 10px 10px 20px #9aa3af;
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .opiniones__carta {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .opiniones__carta {
+    text-align: center;
+  }
 }
 
 .opiniones__avatar {
@@ -747,7 +748,7 @@ header {
   background-color: #E3D888;
 }
 
-.caja__boton:hover, .btn-secondary:hover {
+.caja__boton:hover {
   background-color: #C1CAD6;
   color: #1C3144;
   -webkit-transform: scale(1.1);
@@ -757,14 +758,14 @@ header {
           box-shadow: 2px 2px 2px 2px #c3979f6c;
 }
 
-.caja__boton:focus, .btn-secondary:focus {
+.caja__boton:focus {
   color: #C1CAD6;
   background-color: #1C3144;
   -webkit-box-shadow: 2px 2px 2px 2px #c3979f6c;
           box-shadow: 2px 2px 2px 2px #c3979f6c;
 }
 
-.caja__boton:active:focus, .btn-secondary:active:focus {
+.caja__boton:active:focus {
   -webkit-box-shadow: 2px 2px 2px 2px #c3979f6c;
           box-shadow: 2px 2px 2px 2px #c3979f6c;
 }
@@ -817,13 +818,13 @@ header {
 
 @media screen and (max-width: 480px) {
   .caja--tipo-servicio .caja__campo__opcion {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
 
 @media screen and (min-width: 481px) and (max-width: 991px) {
   .caja--tipo-servicio .caja__campo__opcion {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -873,6 +874,7 @@ header {
 
 .caja--consultas:focus {
   background-color: #1C3144;
+  color: #C1CAD6;
 }
 
 .caja--botones {

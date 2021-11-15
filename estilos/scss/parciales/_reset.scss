@@ -51,7 +51,6 @@ h2 {
 }
 h3 {
     color: $azul;
-    text-align: left;
     @include celular {
         font-size: 1.6rem;
     }
